@@ -1,6 +1,11 @@
 #!/bin/sh
 #this bash script use fsl to process brain MRI into MNI template
 
+#change directories in this script : $1 and $2 and $3
+
+#https://stackoverflow.com/questions/874452/change-the-current-directory-from-a-bash-script
+#
+
 export FSLOUTPUTTYPE='NIFTI'
 
 # $1 is the folder of the raw data, $2 is the filename of the raw data, $3 is output folder to save processed data
